@@ -1,0 +1,23 @@
+
+/helloweb
+      |
+      |------- /src
+       	     |------ /main
+        	     	    |------ /java
+        	     	    |	   |------ /controller
+        	     	    |	   	      |------ HelloServlet.java
+       	     	    |------ /resource
+        	     	    |	   |------ /config
+        	     	    |	   	      |------ settings.xml
+=============================================================
+                                |------ /webapp
+                                                |-------- /WEB-INF
+       	     	     	       |	          |-------- web.xml
+                 	    	       |                |-------- /classes
+        	     	    	       | 	          |		|------ /controller
+        	     	    	       |	          |			     |------ HelloServlet.java
+      	                 	       |	          |-------- /lib
+                              	       |	  	           |------ mariadb-client.xx.jar
+		   	       |----- index.jsp
+			       |----- /images
+				       |------ profile.jpg
