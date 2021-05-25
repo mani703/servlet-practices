@@ -4,20 +4,20 @@
       |------- /src
        	     |------ /main
         	     	    |------ /java
-        	     	    |	   |------ /controller
-        	     	    |	   	      |------ HelloServlet.java
-       	     	    |------ /resource
-        	     	    |	   |------ /config
-        	     	    |	   	      |------ settings.xml
+        	     	    |	   	   |------ /controller
+        	     	    |	   	      			|------ HelloServlet.java
+       	     	    	|------ /resource
+        	     	    |	   	   |------ /config
+        	     	    |	   	      			|------ settings.xml
+                        |------ /webapp
 =============================================================
-                                |------ /webapp
-                                                |-------- /WEB-INF
-       	     	     	       |	          |-------- web.xml
-                 	    	       |                |-------- /classes
-        	     	    	       | 	          |		|------ /controller
-        	     	    	       |	          |			     |------ HelloServlet.java
-      	                 	       |	          |-------- /lib
-                              	       |	  	           |------ mariadb-client.xx.jar
-		   	       |----- index.jsp
-			       |----- /images
-				       |------ profile.jpg
+                                   |-------- /WEB-INF
+       	     	     	       	   |	         |-------- web.xml
+                 	    	       |             |-------- /classes
+        	     	    	       | 	         |			   |------ /controller
+        	     	    	       |	         |			     			|------ HelloServlet.java
+      	                 	       |	         |-------- /lib
+                              	   |	  	           	  	 |------ mariadb-client.xx.jar
+		   	       				   |----- index.jsp
+			       				   |----- /images
+				       						  |------ profile.jpg
