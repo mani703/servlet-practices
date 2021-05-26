@@ -1,0 +1,16 @@
+[1]
+src/main/java
+  com.douzone.guestbook.controller
+         |-- GuestbookController (/gb)
+  com.douzone.guestbook.dao
+         |-- GuestbookDao
+  com.douzone.guestbook.vo
+         |-- GuestbookVo
+
+[2]
+webapp/
+         |-- WEB-INF
+                |-- web.xml
+                |-- views
+                      |-- index.jsp
+                      |-- deleteform.jsp

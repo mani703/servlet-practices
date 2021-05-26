@@ -3,10 +3,8 @@
 <%@ page import="com.douzone.guestbook.dao.GuestbookDao"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
-	List<GuestbookVo> list = new GuestbookDao().findAll(); 
-	System.out.println(list);
-	int count = new GuestbookDao().countOfList();
-	System.out.println(count);
+	List<GuestbookVo> list = (List<GuestbookVo>)request.getAttribute("list");
+	int count = (int)request.getAttribute("count");
 %>
 
 <html>
@@ -15,7 +13,7 @@
 <title>방명록</title>
 </head>
 <body>
-	<form action="<%=request.getContextPath() %>/add.jsp" method="post">
+	<form action="<%=request.getContextPath() %>/gb?a=add" method="post">
 		<table border=1 width=500>
 			<tr>
 				<td>이름</td><td><input type="text" name="name"></td>
@@ -41,10 +39,11 @@
 					<td><%=count-i %></td>
 					<td><%=vo.getName() %></td>
 					<td><%=vo.getRegDate() %></td>
-					<td><a href="<%=request.getContextPath() %>/deleteform.jsp?index=<%=vo.getNo() %>">삭제</a></td>
+					<td><a href="<%=request.getContextPath() %>/gb?a=deleteform&no=<%=vo.getNo() %>">삭제</a></td>
 				</tr>
 				<tr>
 					<td colspan=4><%=content %></td>
+					
 				</tr>
 			</table>
 	<%
