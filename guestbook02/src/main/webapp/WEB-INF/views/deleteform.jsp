@@ -9,7 +9,8 @@
 </head>
 <body>
 	<form method="post" action="<%=request.getContextPath() %>/gb?a=delete">
-		<input type='hidden' name="no" value="<%=index %>">
+		<input type='hidden' name="no" value="delete">
+		<input type='hidden' name='no' value='<%=request.getParameter("no") %>'>
 		<table>
 			<tr>
 				<td>비밀번호</td>
