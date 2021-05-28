@@ -9,6 +9,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	<h1>JSTL(forEach Tag) test</h1>
+	<c:forEach items="${users }" var="user" varStatus="status">
+		(${status.index }:${status.count })[${user.no }:${user.name }] <br/>
+	</c:forEach>
 </body>
 </html>
