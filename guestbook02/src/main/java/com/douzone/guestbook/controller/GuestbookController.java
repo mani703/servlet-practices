@@ -57,9 +57,7 @@ public class GuestbookController extends HttpServlet {
 			
 		} else {
 			List<GuestbookVo> list = new GuestbookDao().findAll(); 
-			int count = new GuestbookDao().countOfList();
 			request.setAttribute("list", list);
-			request.setAttribute("count", count);
 			
 			RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/index.jsp");
 			rd.forward(request, response);
