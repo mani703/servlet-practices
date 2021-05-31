@@ -20,7 +20,7 @@ public class _01Servlet extends HttpServlet {
 		long lVal = 10;
 		float fVal = 3.14f;
 		boolean bVal = true;
-		String sVal = "가나다라바마사";
+		String sVal = "가\n나\n다\n라\n바\n마\n사";
 		
 		// 객체
 		Object obj = null;
